@@ -13,20 +13,20 @@ foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+ Object.keys(foods);
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+ Object.values(foods);
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
-// YOUR CODE HERE
+  foods.grapes;
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-// YOUR CODE HERE
-
+  foods.cherrys = 25;
+  
 
 #-------------------
 // Part 2: Email
@@ -39,16 +39,24 @@ foods = {
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-// Write code that logs your email object to the terminal.
+var email = {
+
+
 
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
-
+  sender: "nick.doder@gmail.com",
+  senderName: "Nick Doder",
+  recipient: "tdoder89@gmail.com",
+  recipientName: "Tom Doder",
+  message: "Hey Tom, just wondering if you're coming home for thanksgiving or Christmas. -Nick",
+  timestamp: "12:25pm October 23, 2022",
+  Opened: true
+}
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
+Object.values(email);
 
 
 #-------------------
@@ -99,3 +107,34 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+email = [
+  {
+    sender: "nick.doder@gmail.com",
+    senderName: "Nick Doder",
+    recipient: "tdoder89@gmail.com",
+    recipientName: "Tom Doder",
+    message: "Hey Tom, just wondering if you're coming home for thanksgiving or Christmas. -Nick",
+    timestamp: "12:25pm October 23, 2022",
+    Opened: true,
+  },
+  {
+    sender: "jack@gmail.com",
+    senderName: "Jack",
+    recipient: "tdoder89@gmail.com",
+    recipientName: "Tom Doder",
+    message: "Hey Tom, seeing what you're up to today. -Jack",
+    timestamp: "12:52pm October 23, 2022",
+    Opened: true
+  },
+  {
+    sender: "espn@espn.com",
+    senderName: "ESPN",
+    recipient: "tdoder89@gmail.com",
+    recipientName: "Tom Doder",
+    message: "Hey Tom, check out our special promotion!",
+    timestamp: "1:10pm October 23, 2022",
+    Opened: false
+  }
+]
+console.log(email);
+console.log(email[0]);
